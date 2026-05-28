@@ -1,0 +1,278 @@
+<svg width="1440" height="1000" viewBox="0 0 1440 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="1000" fill="#0B0E14"/>
+  <defs>
+    <filter id="blueGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace; }
+      .muted { fill: #6B7280; }
+      .text { fill: #D1D5DB; }
+      .white { fill: #FFFFFF; }
+      .green { fill: #10B981; }
+      .red { fill: #EF4444; }
+      .blue { fill: #3B82F6; }
+      .amber { fill: #F59E0B; }
+      .panel { fill: #111827; stroke: #1F2937; stroke-width: 1; }
+      .panel2 { fill: #0F172A; stroke: #1F2937; stroke-width: 1; }
+      .line { stroke: #1F2937; stroke-width: 1; }
+      .softLine { stroke: #253244; stroke-width: 1; }
+      .chip { fill: #0B1220; stroke: #263244; stroke-width: 1; }
+      .activeChip { fill: #11233F; stroke: #3B82F6; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Top navigation -->
+  <rect x="0" y="0" width="1440" height="64" fill="#0B0E14" stroke="#1F2937"/>
+  <text x="32" y="40" class="sans white" font-size="20" font-weight="800" letter-spacing="2">ARB.TERMINAL</text>
+  <circle cx="20" cy="32" r="6" fill="#3B82F6" filter="url(#blueGlow)"/>
+  <g class="sans" font-size="14" font-weight="600">
+    <rect x="246" y="0" width="120" height="64" fill="#101827"/>
+    <text x="272" y="39" class="white">机会榜单</text>
+    <rect x="246" y="62" width="120" height="2" fill="#3B82F6" filter="url(#blueGlow)"/>
+    <text x="400" y="39" class="muted">单币对比</text>
+    <text x="532" y="39" class="muted">宏观监控</text>
+    <text x="668" y="39" class="muted">告警中心</text>
+  </g>
+  <g class="mono" font-size="12">
+    <circle cx="1184" cy="32" r="4" fill="#10B981"/>
+    <text x="1198" y="37" class="muted">API</text>
+    <text x="1226" y="37" class="green">LIVE</text>
+    <text x="1288" y="37" class="muted">12ms</text>
+    <rect x="1342" y="22" width="66" height="22" rx="5" class="chip"/>
+    <text x="1356" y="37" class="text">UTC+8</text>
+  </g>
+
+  <!-- Page header -->
+  <text x="32" y="112" class="sans white" font-size="28" font-weight="800">全市场资金费率机会榜</text>
+  <text x="32" y="140" class="sans muted" font-size="14">榜单按“可执行机会”排名：币种 + 交易所 + 对冲方向。右侧固定展示当前选中币种的跨交易所明细。</text>
+  <rect x="1136" y="96" width="272" height="40" rx="7" fill="#0B1220" stroke="#1F2937"/>
+  <text x="1154" y="121" class="sans muted" font-size="13">搜索币种 / 交易所 / 机会方向</text>
+
+  <!-- KPI strip -->
+  <g>
+    <rect x="32" y="168" width="330" height="96" rx="8" class="panel"/>
+    <text x="56" y="198" class="sans muted" font-size="12" font-weight="700" letter-spacing="1.5">BEST NET APR</text>
+    <text x="56" y="236" class="mono green" font-size="34" font-weight="800">118.42%</text>
+    <text x="242" y="236" class="sans muted" font-size="13">PEPE / Gate</text>
+  </g>
+  <g>
+    <rect x="382" y="168" width="330" height="96" rx="8" class="panel"/>
+    <text x="406" y="198" class="sans muted" font-size="12" font-weight="700" letter-spacing="1.5">MAX FUNDING SPREAD</text>
+    <text x="406" y="236" class="mono blue" font-size="34" font-weight="800">0.083%</text>
+    <text x="590" y="236" class="sans muted" font-size="13">BTC / Binance-OKX</text>
+  </g>
+  <g>
+    <rect x="732" y="168" width="330" height="96" rx="8" class="panel"/>
+    <text x="756" y="198" class="sans muted" font-size="12" font-weight="700" letter-spacing="1.5">OI MOMENTUM</text>
+    <text x="756" y="236" class="mono amber" font-size="34" font-weight="800">+18.6%</text>
+    <text x="922" y="236" class="sans muted" font-size="13">SOL / 4H</text>
+  </g>
+  <g>
+    <rect x="1082" y="168" width="326" height="96" rx="8" class="panel"/>
+    <text x="1106" y="198" class="sans muted" font-size="12" font-weight="700" letter-spacing="1.5">DATA COVERAGE</text>
+    <text x="1106" y="236" class="mono white" font-size="34" font-weight="800">326</text>
+    <text x="1198" y="236" class="sans muted" font-size="13">markets / 5 exchanges</text>
+  </g>
+
+  <!-- Main grid panels -->
+  <rect x="32" y="292" width="892" height="668" rx="10" class="panel"/>
+  <rect x="948" y="292" width="460" height="668" rx="10" class="panel"/>
+
+  <!-- Leaderboard tabs -->
+  <text x="56" y="330" class="sans white" font-size="20" font-weight="750">Opportunity Leaderboard</text>
+  <text x="56" y="354" class="sans muted" font-size="13">一行一个可执行机会，不强行要求所有交易所都有该币种。</text>
+  <g class="sans" font-size="12" font-weight="700">
+    <rect x="56" y="376" width="116" height="30" rx="6" class="activeChip"/>
+    <text x="72" y="396" class="blue">最高净年化</text>
+    <rect x="180" y="376" width="112" height="30" rx="6" class="chip"/>
+    <text x="196" y="396" class="muted">Funding 极值</text>
+    <rect x="300" y="376" width="118" height="30" rx="6" class="chip"/>
+    <text x="316" y="396" class="muted">跨所差值</text>
+    <rect x="426" y="376" width="98" height="30" rx="6" class="chip"/>
+    <text x="442" y="396" class="muted">OI 异动</text>
+    <rect x="532" y="376" width="116" height="30" rx="6" class="chip"/>
+    <text x="548" y="396" class="muted">高流动性</text>
+  </g>
+
+  <!-- Leaderboard table header -->
+  <rect x="56" y="426" width="844" height="42" fill="#0B0E14" stroke="#1F2937"/>
+  <g class="sans muted" font-size="11" font-weight="800" letter-spacing="1">
+    <text x="76" y="452">机会</text>
+    <text x="226" y="452">交易所</text>
+    <text x="330" y="452">收费用方向</text>
+    <text x="484" y="452" text-anchor="end">Funding</text>
+    <text x="596" y="452" text-anchor="end">Net APR</text>
+    <text x="700" y="452" text-anchor="end">OI</text>
+    <text x="790" y="452" text-anchor="end">覆盖</text>
+    <text x="878" y="452" text-anchor="end">风险</text>
+  </g>
+
+  <!-- Rows -->
+  <g class="mono" font-size="13">
+    <rect x="56" y="468" width="844" height="64" fill="#111827"/>
+    <line x1="56" y1="532" x2="900" y2="532" class="line"/>
+    <circle cx="84" cy="500" r="13" fill="#172033" stroke="#334155"/>
+    <text x="80" y="505" class="sans white" font-size="12" font-weight="800">P</text>
+    <text x="112" y="493" class="white" font-weight="800">PEPE-USDT</text>
+    <text x="112" y="515" class="muted" font-size="11">spot hedge available</text>
+    <text x="226" y="505" class="text">Gate</text>
+    <text x="330" y="505" class="green">Short Perp / Long Spot</text>
+    <text x="484" y="505" class="green" text-anchor="end">+0.1200%</text>
+    <text x="596" y="505" class="amber" text-anchor="end" font-weight="800">118.42%</text>
+    <text x="700" y="505" class="text" text-anchor="end">310M</text>
+    <text x="790" y="505" class="muted" text-anchor="end">2/5</text>
+    <rect x="838" y="485" width="40" height="24" rx="12" fill="#3F2E13"/>
+    <text x="858" y="502" class="amber" text-anchor="middle" font-size="11">MED</text>
+
+    <rect x="56" y="532" width="844" height="64" fill="#0F172A"/>
+    <line x1="56" y1="596" x2="900" y2="596" class="line"/>
+    <circle cx="84" cy="564" r="13" fill="#172033" stroke="#334155"/>
+    <text x="80" y="569" class="sans white" font-size="12" font-weight="800">W</text>
+    <text x="112" y="557" class="white" font-weight="800">WLD-USDT</text>
+    <text x="112" y="579" class="muted" font-size="11">negative funding</text>
+    <text x="226" y="569" class="text">Binance</text>
+    <text x="330" y="569" class="red">Long Perp / Short Spot</text>
+    <text x="484" y="569" class="red" text-anchor="end">-0.0950%</text>
+    <text x="596" y="569" class="amber" text-anchor="end" font-weight="800">91.70%</text>
+    <text x="700" y="569" class="text" text-anchor="end">430M</text>
+    <text x="790" y="569" class="muted" text-anchor="end">3/5</text>
+    <rect x="840" y="549" width="38" height="24" rx="12" fill="#3F1D1D"/>
+    <text x="859" y="566" class="red" text-anchor="middle" font-size="11">HI</text>
+
+    <rect x="56" y="596" width="844" height="64" fill="#111827"/>
+    <line x1="56" y1="660" x2="900" y2="660" class="line"/>
+    <circle cx="84" cy="628" r="13" fill="#172033" stroke="#334155"/>
+    <text x="79" y="633" class="sans white" font-size="12" font-weight="800">B</text>
+    <text x="112" y="621" class="white" font-weight="800">BTC-USDT</text>
+    <text x="112" y="643" class="muted" font-size="11">selected symbol</text>
+    <text x="226" y="633" class="text">Binance</text>
+    <text x="330" y="633" class="green">Short Perp / Long Spot</text>
+    <text x="484" y="633" class="green" text-anchor="end">+0.0520%</text>
+    <text x="596" y="633" class="green" text-anchor="end" font-weight="800">48.31%</text>
+    <text x="700" y="633" class="text" text-anchor="end">18.2B</text>
+    <text x="790" y="633" class="green" text-anchor="end">5/5</text>
+    <rect x="838" y="613" width="40" height="24" rx="12" fill="#12372D"/>
+    <text x="858" y="630" class="green" text-anchor="middle" font-size="11">LOW</text>
+
+    <rect x="56" y="660" width="844" height="64" fill="#0F172A"/>
+    <line x1="56" y1="724" x2="900" y2="724" class="line"/>
+    <circle cx="84" cy="692" r="13" fill="#172033" stroke="#334155"/>
+    <text x="80" y="697" class="sans white" font-size="12" font-weight="800">S</text>
+    <text x="112" y="685" class="white" font-weight="800">SOL-USDT</text>
+    <text x="112" y="707" class="muted" font-size="11">OI spike + price down</text>
+    <text x="226" y="697" class="text">OKX</text>
+    <text x="330" y="697" class="red">Long Perp / Short Spot</text>
+    <text x="484" y="697" class="red" text-anchor="end">-0.0610%</text>
+    <text x="596" y="697" class="green" text-anchor="end" font-weight="800">57.86%</text>
+    <text x="700" y="697" class="text" text-anchor="end">2.9B</text>
+    <text x="790" y="697" class="muted" text-anchor="end">4/5</text>
+    <rect x="840" y="677" width="38" height="24" rx="12" fill="#3F1D1D"/>
+    <text x="859" y="694" class="red" text-anchor="middle" font-size="11">HI</text>
+
+    <rect x="56" y="724" width="844" height="64" fill="#111827"/>
+    <line x1="56" y1="788" x2="900" y2="788" class="line"/>
+    <circle cx="84" cy="756" r="13" fill="#172033" stroke="#334155"/>
+    <text x="79" y="761" class="sans white" font-size="12" font-weight="800">E</text>
+    <text x="112" y="749" class="white" font-weight="800">ETH-USDT</text>
+    <text x="112" y="771" class="muted" font-size="11">high liquidity</text>
+    <text x="226" y="761" class="text">Bybit</text>
+    <text x="330" y="761" class="green">Short Perp / Long Spot</text>
+    <text x="484" y="761" class="green" text-anchor="end">+0.0480%</text>
+    <text x="596" y="761" class="green" text-anchor="end" font-weight="800">43.92%</text>
+    <text x="700" y="761" class="text" text-anchor="end">9.7B</text>
+    <text x="790" y="761" class="green" text-anchor="end">5/5</text>
+    <rect x="838" y="741" width="40" height="24" rx="12" fill="#12372D"/>
+    <text x="858" y="758" class="green" text-anchor="middle" font-size="11">LOW</text>
+
+    <rect x="56" y="788" width="844" height="64" fill="#0F172A"/>
+    <line x1="56" y1="852" x2="900" y2="852" class="line"/>
+    <circle cx="84" cy="820" r="13" fill="#172033" stroke="#334155"/>
+    <text x="79" y="825" class="sans white" font-size="12" font-weight="800">B</text>
+    <text x="112" y="813" class="white" font-weight="800">BTC-USDT</text>
+    <text x="112" y="835" class="muted" font-size="11">funding spread candidate</text>
+    <text x="226" y="825" class="text">OKX</text>
+    <text x="330" y="825" class="green">Short Perp / Long Spot</text>
+    <text x="484" y="825" class="green" text-anchor="end">+0.0145%</text>
+    <text x="596" y="825" class="text" text-anchor="end" font-weight="800">12.21%</text>
+    <text x="700" y="825" class="text" text-anchor="end">15.6B</text>
+    <text x="790" y="825" class="green" text-anchor="end">5/5</text>
+    <rect x="838" y="805" width="40" height="24" rx="12" fill="#12372D"/>
+    <text x="858" y="822" class="green" text-anchor="middle" font-size="11">LOW</text>
+  </g>
+
+  <!-- Footer explanation in left panel -->
+  <rect x="56" y="878" width="844" height="58" rx="8" fill="#0B1220" stroke="#253244"/>
+  <text x="78" y="902" class="sans white" font-size="13" font-weight="700">排序逻辑</text>
+  <text x="78" y="924" class="sans muted" font-size="12">默认按 Net APR：abs(Funding) × 3 × 365 - 手续费估算 - 价差成本 - 流动性/波动惩罚。低覆盖数据降权但不隐藏。</text>
+
+  <!-- Right selected symbol panel -->
+  <text x="976" y="330" class="sans white" font-size="20" font-weight="750">BTC-USDT 交易所对比</text>
+  <text x="976" y="354" class="sans muted" font-size="13">选中任意机会后，右侧展示该币种在各交易所的真实可比数据。</text>
+  <g class="mono">
+    <text x="976" y="400" class="muted" font-size="12">Spot ref</text>
+    <text x="976" y="430" class="white" font-size="28" font-weight="800">$104,250.20</text>
+    <text x="1206" y="400" class="muted" font-size="12">24H</text>
+    <text x="1206" y="430" class="green" font-size="28" font-weight="800">+1.84%</text>
+  </g>
+  <line x1="976" y1="462" x2="1380" y2="462" class="line"/>
+
+  <!-- Exchange comparison table -->
+  <g class="sans muted" font-size="10" font-weight="800" letter-spacing="1">
+    <text x="976" y="494">EXCHANGE</text>
+    <text x="1108" y="494" text-anchor="end">PERP PRICE</text>
+    <text x="1208" y="494" text-anchor="end">FUNDING</text>
+    <text x="1292" y="494" text-anchor="end">OI</text>
+    <text x="1380" y="494" text-anchor="end">NEXT</text>
+  </g>
+
+  <g class="mono" font-size="12">
+    <rect x="976" y="510" width="404" height="50" rx="6" fill="#0F172A"/>
+    <text x="994" y="541" class="white" font-weight="800">Binance</text>
+    <text x="1108" y="541" class="text" text-anchor="end">104,310.5</text>
+    <text x="1208" y="541" class="green" text-anchor="end">+0.0520%</text>
+    <text x="1292" y="541" class="text" text-anchor="end">18.2B</text>
+    <text x="1380" y="541" class="muted" text-anchor="end">03:45</text>
+
+    <rect x="976" y="568" width="404" height="50" rx="6" fill="#111827"/>
+    <text x="994" y="599" class="white" font-weight="800">OKX</text>
+    <text x="1108" y="599" class="text" text-anchor="end">104,338.1</text>
+    <text x="1208" y="599" class="green" text-anchor="end">+0.0145%</text>
+    <text x="1292" y="599" class="text" text-anchor="end">15.6B</text>
+    <text x="1380" y="599" class="muted" text-anchor="end">03:45</text>
+
+    <rect x="976" y="626" width="404" height="50" rx="6" fill="#0F172A"/>
+    <text x="994" y="657" class="white" font-weight="800">Gate</text>
+    <text x="1108" y="657" class="text" text-anchor="end">104,290.7</text>
+    <text x="1208" y="657" class="red" text-anchor="end">-0.0021%</text>
+    <text x="1292" y="657" class="text" text-anchor="end">2.1B</text>
+    <text x="1380" y="657" class="muted" text-anchor="end">07:45</text>
+
+    <rect x="976" y="684" width="404" height="50" rx="6" fill="#111827"/>
+    <text x="994" y="715" class="white" font-weight="800">Bybit</text>
+    <text x="1108" y="715" class="text" text-anchor="end">104,301.4</text>
+    <text x="1292" y="715" class="text" text-anchor="end">8.7B</text>
+    <text x="1380" y="715" class="muted" text-anchor="end">03:45</text>
+  </g>
+
+  <!-- Fix explicit class missed by XML attributes -->
+  <text x="1208" y="715" class="mono green" font-size="12" text-anchor="end">+0.0260%</text>
+
+  <line x1="976" y1="764" x2="1380" y2="764" class="line"/>
+  <text x="976" y="796" class="sans white" font-size="16" font-weight="750">最佳执行提示</text>
+  <rect x="976" y="812" width="404" height="88" rx="8" fill="#0B1220" stroke="#253244"/>
+  <text x="998" y="840" class="sans text" font-size="13">当前最优正费率路径：</text>
+  <text x="998" y="866" class="mono green" font-size="15" font-weight="800">Short Binance Perp + Long Spot Hedge</text>
+  <text x="998" y="888" class="sans muted" font-size="12">Funding 高，但需检查现货深度、手续费、转账/保证金占用。</text>
+
+  <text x="976" y="930" class="sans white" font-size="16" font-weight="750">设计要点</text>
+  <g class="sans muted" font-size="12">
+    <text x="976" y="956">1. 左侧用于发现机会，右侧用于解释选中币种。</text>
+    <text x="976" y="978">2. 不存在的交易所数据直接显示缺失，不做平均误导。</text>
+  </g>
+</svg>
