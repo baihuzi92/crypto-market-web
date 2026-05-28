@@ -1,7 +1,7 @@
 'use client';
 
 import { LineChart, Line, ResponsiveContainer, YAxis, Tooltip } from 'recharts';
-import { CryptoData } from '../types/crypto';
+import { CryptoData } from '../_lib/types/crypto';
 
 interface PriceChartProps {
   crypto: CryptoData;

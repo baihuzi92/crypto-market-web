@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { priceMonitor } from '@/app/services/priceMonitor';
-import { sendAlert, formatPriceAlert } from '@/app/services/serverChan';
+import { priceMonitor } from '@/app/_lib/services/priceMonitor';
+import { sendAlert, formatPriceAlert } from '@/app/_lib/services/serverChan';
 
 export async function GET() {
   try {

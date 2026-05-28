@@ -1,4 +1,4 @@
-import { getExchangeCryptoData } from '@/app/services/exchanges';
+import { getExchangeCryptoData } from '@/app/_lib/services/exchanges';
 import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';

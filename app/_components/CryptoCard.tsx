@@ -1,7 +1,7 @@
 'use client';
 
 import { TrendingUp, TrendingDown } from 'lucide-react';
-import { CryptoData } from '../types/crypto';
+import { CryptoData } from '../_lib/types/crypto';
 import PriceChart from './PriceChart';
 
 interface CryptoCardProps {

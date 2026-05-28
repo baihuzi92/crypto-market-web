@@ -18,7 +18,7 @@ import {
   Table2,
   Zap,
 } from 'lucide-react';
-import { CryptoData, ExchangeMarketData } from './types/crypto';
+import { CryptoData, ExchangeMarketData } from './_lib/types/crypto';
 
 type TerminalTab = 'arbitrage' | 'monitor' | 'trade';
 type SortKey = 'apr' | 'fundingRate' | 'spread' | 'priceChange24h' | 'volume';
